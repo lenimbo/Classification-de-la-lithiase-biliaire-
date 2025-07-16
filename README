@@ -1,0 +1,93 @@
+# 🧑‍📋 Projet de Classification : Prédiction de la Lithiase Biliaire
+
+Ce projet de data science vise à construire, comparer et interpréter plusieurs modèles de classification dans le but de prédire la présence ou l'absence de lithiase biliaire ("Gallstone Status") à partir de variables médicales.
+
+## 📚 Contenu du projet
+
+* Analyse exploratoire des données (EDA)
+* Traitement des valeurs manquantes et des outliers (z-score)
+* Encodage des variables catégorielles
+* Sélection des variables (corrélation, VIF)
+* Équilibrage des classes (optionnel)
+* Évaluation de plusieurs modèles de classification avec validation croisée
+* Recherche d'hyperparamètres via `GridSearchCV`
+* Affichage des performances (accuracy, precision, recall, F1, AUC)
+* Visualisation : matrices de confusion, courbes ROC, importance des variables
+* Analyse dynamique du seuil de classification
+* Déploiement en API Flask pour démonstration interactive
+
+## 🚀 Modèles testés
+
+* Logistic Regression
+* Random Forest
+* SVM
+* KNN
+* XGBoost
+* Gradient Boosting
+* Lasso (Logistic Regression avec régularisation L1)
+
+## 🌐 Technologies utilisées
+
+* Python 3.x
+* Pandas, Numpy, Seaborn, Matplotlib
+* Scikit-learn
+* XGBoost
+* ipywidgets (visualisation interactive du seuil)
+* Flask (API de démonstration)
+
+## 🔧 Exécution locale
+
+1. Cloner le dépôt GitHub
+
+```bash
+git clone https://github.com/votre-nom/projet-lithiase-classification.git
+cd projet-lithiase-classification
+```
+
+2. Installer les dépendances
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Exécuter le notebook d'analyse (Jupyter)
+
+4. Démarrer l'API Flask pour test
+
+```bash
+cd api
+python app.py
+```
+
+## 📋 Structure du projet
+
+```
+Prediction de la lithiase biliaire/
+├── dataset.xlsx                     # Données source
+├── entrainement_modele.ipynb                   # Modèles sauvegardés (joblib/pkl)
+├── app.py                      # Code Flask pour prédiction via formulaire ou JSON  
+├── requirements.txt           # Bibliothèques nécessaires
+├── README.md                  # Ce fichier
+```
+
+## 📊 Exemple de rendu visuel (Notebook)
+
+* Comparaison des scores F1 de chaque modèle
+* Importance des variables (barplot)
+* Courbes ROC superposées
+* Analyse interactive de seuil (widget)
+
+## 🚫 Limitations
+
+* La performance peut dépendre de la qualité des données d'origine et aussi de leur taille
+* Le choix du seuil optimal n'est pas automatique (mais interactif)
+
+## 📖 Auteurs
+
+* KONE NAMORY - Data Scientist
+* Email : namory.kone22@inphb.ci
+* LinkedIn : https://www.linkedin.com/in/kone-namory-667805151/
+
+---
+
+Merci pour votre intérêt ! N'oubliez pas de mettre une ⭐ si ce projet vous a aidé !
