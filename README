@@ -28,7 +28,7 @@ Ce projet de data science vise à construire, comparer et interpréter plusieurs
 
 ## 🌐 Technologies utilisées
 
-* Python 3.x
+* Python 3.11
 * Pandas, Numpy, Seaborn, Matplotlib
 * Scikit-learn
 * XGBoost
@@ -40,7 +40,7 @@ Ce projet de data science vise à construire, comparer et interpréter plusieurs
 1. Cloner le dépôt GitHub
 
 ```bash
-git clone https://github.com/votre-nom/projet-lithiase-classification.git
+git clone https://github.com/lenimbo/Classification-de-la-lithiase-biliaire-.git
 cd projet-lithiase-classification
 ```
 
