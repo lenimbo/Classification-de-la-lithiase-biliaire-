@@ -780,11 +780,15 @@ def api_predict():
             'code': 'PREDICTION_ERROR'
         }), 500
 
-if __name__ == '__main__':
+"""if __name__ == '__main__':
     print("🚀 Démarrage de l'application de prédiction de lithiase biliaire")
     print("📊 Features utilisées:", FEATURES)
     print("🔗 Interface web: http://localhost:5000")
     print("🔗 API endpoint: http://localhost:5000/predict")
     print("🔗 Health check: http://localhost:5000/health")
     
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    app.run(debug=True, host='0.0.0.0', port=5000)"""
+
+if __name__ == '__main__':
+    port = int(os.environ.get('PORT', 5000))  # Render fournit PORT automatiquement
+    app.run(host='0.0.0.0', port=port)
